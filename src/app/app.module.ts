@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { AppController } from './app.controller';
 import { AppService } from '../app/app.service';
 import { PsicologoModule } from '../psicologo/psicologo.module';
+import { PacienteModule } from '../paciente/paciente.module';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true }),
@@ -23,6 +24,7 @@ import { PsicologoModule } from '../psicologo/psicologo.module';
     }),
   
     PsicologoModule,
+    PacienteModule,
   ],
   controllers: [AppController],
   providers: [AppService],

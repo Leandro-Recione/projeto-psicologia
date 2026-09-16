@@ -1,10 +1,18 @@
 import { Injectable } from '@nestjs/common';
+import { Psicologo } from './entity/psicologo.entity';
 
 @Injectable()
 export class PsicologoService {
 
+findall(){
+    return Psicologo;
+}
 
-    oi(){
-        return"a primeira rota deu certo";
-    }
+findone(){}
+
+create(){}
+
+update(){}
+
+delete(){}
 }

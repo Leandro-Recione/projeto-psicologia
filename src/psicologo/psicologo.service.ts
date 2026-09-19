@@ -5,10 +5,15 @@ import { Psicologo } from './entity/psicologo.entity';
 export class PsicologoService {
 
 findall(){
-    return Psicologo;
+return [{ id: 1, nome: 'Leandro' },
+        { id: 2, nome: 'Vanessa'},
+        { id: 3, nome: 'Andressa' },
+        ];
 }
 
-findone(){}
+findone(id: string){
+    return "tarefa 1" + id;
+}
 
 create(){}
 
